@@ -1,0 +1,17 @@
+﻿<Window x:Class="EmailClient.Account"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:EmailClient"
+        mc:Ignorable="d"
+        Title="Account" Height="250" Width="450">
+    <StackPanel>
+        <TextBox x:Name="tbLogin" Margin="20" Height="50" BorderBrush="Black"/>
+        <TextBox x:Name="tbPassword" Margin="20" Height="50" BorderBrush="Black"/>
+        <StackPanel Orientation="Horizontal">
+            <Button x:Name="btnLogin" Content="Login" Margin="100 0 50 0" Width="100" Height="30" Click="btnLogin_Click"/>
+            <Button x:Name="btnCancel" Content="Cancel" Margin="0 0 100 0" Width="100" Click="btnCancel_Click"/>
+        </StackPanel>
+    </StackPanel>
+</Window>
